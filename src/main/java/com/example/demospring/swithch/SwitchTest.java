@@ -1,5 +1,8 @@
 package com.example.demospring.swithch;
 
+import com.example.demospring.util.Day;
+
+import static com.example.demospring.util.Day.*;
 import static java.lang.System.out;
 
 public class SwitchTest {
@@ -18,11 +21,50 @@ public class SwitchTest {
         }
        return  res;
     }
+
+    static int testS2(Day day) {
+
+        int dayOfWeek;
+        // fall through: forget break;
+        switch (day) {
+            case MONDAY:
+            case FRIDAY:
+            case SUNDAY:
+                dayOfWeek = 6;
+                break;
+            case TUESDAY:
+                dayOfWeek = 7;
+                break;
+            case THURSDAY:
+            case SATURDAY:
+                dayOfWeek = 8;
+                break;
+            case WEDNESDAY:
+                dayOfWeek = 9;
+                break;
+            default:
+                dayOfWeek = 0;
+                break;
+        }
+
+        return dayOfWeek;
+    }
+
     public static void main(String[] args) {
         int a = 1;
         String b = "nihao";
         // breakthrough
         out.println(SwitchTest.testS1(a));
+        out.println(SwitchTest.testS2(MONDAY));
 
+        int dayOfWeek = switch (FRIDAY) {
+            case MONDAY, FRIDAY, SUNDAY -> 6;
+            case TUESDAY                -> 7;
+            case THURSDAY, SATURDAY     -> 8;
+            case WEDNESDAY              -> 9;
+            default                     -> 0;
+
+        };
+        out.println(dayOfWeek);
     }
 }
