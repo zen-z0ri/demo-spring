@@ -2,7 +2,6 @@ package com.example.demospring.swithch;
 
 import com.example.demospring.util.Day;
 
-import static com.example.demospring.util.Day.*;
 import static java.lang.System.out;
 
 public class SwitchTest {
@@ -50,14 +49,18 @@ public class SwitchTest {
         return dayOfWeek;
     }
 
+//    static String myT(String s, MyFunc myFunc) {
+//        return myFunc(s);
+//    }
     public static void main(String[] args) {
         int a = 1;
         String b = "nihao";
-        // breakthrough
-        out.println(SwitchTest.testS1(a));
-        out.println(SwitchTest.testS2(MONDAY));
 
-        int dayOfWeek = switch (FRIDAY) {
+        out.println(SwitchTest.testS1(a));
+        out.println(SwitchTest.testS2(Day.MONDAY));
+
+        // switch expression jdk 14
+    int dayOfWeek = switch (Day.FRIDAY) {
             case MONDAY, FRIDAY, SUNDAY -> 6;
             case TUESDAY                -> 7;
             case THURSDAY, SATURDAY     -> 8;
@@ -66,5 +69,7 @@ public class SwitchTest {
 
         };
         out.println(dayOfWeek);
+
+        // 
     }
 }
