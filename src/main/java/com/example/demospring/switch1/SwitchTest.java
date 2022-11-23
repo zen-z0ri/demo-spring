@@ -1,4 +1,4 @@
-package com.example.demospring.swithch;
+package com.example.demospring.switch1;
 
 import com.example.demospring.util.Day;
 
