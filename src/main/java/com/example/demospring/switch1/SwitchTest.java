@@ -41,9 +41,11 @@ public class SwitchTest {
             case WEDNESDAY:
                 dayOfWeek = 9;
                 break;
+//            default:
+//                dayOfWeek = 0;
+//                break;
             default:
-                dayOfWeek = 0;
-                break;
+                throw new IllegalStateException("Unexpected value: " + day);
         }
 
         return dayOfWeek;
@@ -65,10 +67,17 @@ public class SwitchTest {
             case TUESDAY                -> 7;
             case THURSDAY, SATURDAY     -> 8;
             case WEDNESDAY              -> 9;
-            default                     -> 0;
+//            default                     -> 0;
 
         };
         out.println(dayOfWeek);
+        if (true) {
+
+        } else if (false) {
+
+        } else {
+            
+        }
 
         // 
     }

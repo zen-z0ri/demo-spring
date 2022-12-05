@@ -12,12 +12,25 @@ public class Test {
 
         out.println(mv);
         out.println(mv.toString());
-        out.println(rv);
+        out.println("---static----");
+        out.println(ReVehicle.getNum());
+        out.println("---static----");
         out.println(rv.toString());
         out.println(rv.passengerNum());
         out.println(rv.brand());
         out.println(rv.price());
         out.println(rv.equals(mv));
         out.println(rv.equals(rv1));
+
+        out.println("----------");
+        String s1 = "nihaome";
+        String s2 = "nihaome";
+        String s3 = new String("gougou");
+        String s4 = new String("gougou");
+        out.println(s1 == s2);
+        out.println(s1.equals(s2));
+        out.println(s3 == s4);
+        out.println(s3.equals(s4));
+
     }
 }
