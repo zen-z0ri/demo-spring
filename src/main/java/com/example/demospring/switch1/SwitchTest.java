@@ -41,9 +41,6 @@ public class SwitchTest {
             case WEDNESDAY:
                 dayOfWeek = 9;
                 break;
-//            default:
-//                dayOfWeek = 0;
-//                break;
             default:
                 throw new IllegalStateException("Unexpected value: " + day);
         }
@@ -51,9 +48,6 @@ public class SwitchTest {
         return dayOfWeek;
     }
 
-//    static String myT(String s, MyFunc myFunc) {
-//        return myFunc(s);
-//    }
     public static void main(String[] args) {
         int a = 1;
         String b = "nihao";
@@ -66,19 +60,11 @@ public class SwitchTest {
             case MONDAY, FRIDAY, SUNDAY -> 6;
             case TUESDAY                -> 7;
             case THURSDAY, SATURDAY     -> 8;
-            case WEDNESDAY              -> 9;
-//            default                     -> 0;
+//            case WEDNESDAY              -> 9;
+            default                     -> 0;
 
         };
+
         out.println(dayOfWeek);
-        if (true) {
-
-        } else if (false) {
-
-        } else {
-            
-        }
-
-        // 
     }
 }
