@@ -29,15 +29,9 @@ public class Test {
 
 
         out.println("----------");
-        String s1 = "nihaome";
-        String s2 = "nihaome";
-        String s3 = new String("gougou");
-        String s4 = new String("gougou");
-        out.println(s1 == s2);
-        out.println(s1.equals(s2));
-        out.println(s3 == s4);
-        out.println(s3.equals(s4));
-        Object o = new Object();
+        MyRecord1 my = new MyRecord1();
+        out.println(my);
 
+        MyRecord1 my2 = new MyRecord1();
     }
 }

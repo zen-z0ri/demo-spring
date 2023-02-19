@@ -9,7 +9,8 @@ VAR="$VAR1"
 echo $VAR
 VAR="${VAR1}"
 echo "$VAR"
-echo $s
+echo "------"
+echo "$s$VAR"
 
 readonly NAME="Zara Ali"
 echo $NAME
