@@ -1,4 +1,4 @@
 package com.example.demospring.j17.record;
 
-public record CarRecord() {
+public record BoxRecord<E>(E ele) {
 }
