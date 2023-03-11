@@ -1,4 +1,4 @@
-package com.example.demospring.branch;
+package com.example.demospring.j17.branch;
 
 public class TestBranch {
     public static void main(String[] args) {
