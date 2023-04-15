@@ -1,8 +1,6 @@
 package com.example.demospring.onj8.ch3lambda.a;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Objects;
+import com.google.common.base.CaseFormat;
 import java.util.stream.IntStream;
 
 public class Father {
@@ -23,7 +21,6 @@ public class Father {
     }
     public static void main(String[] args) {
         IntStream.range(2, 40).forEach(System.out::println);
-        Object s = new Object();
 
     }
 }

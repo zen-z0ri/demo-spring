@@ -21,9 +21,9 @@ public class Test extends MyBase implements Serializable {
                             sldsjfg;lsda 
                     -----
                     """ + """
-                thoshoidf fdsfds""";
+    thoshoidf fdsfds""";
     }
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
         testSet().lines()
                 .forEach(e -> {e += "232";
                     System.out.println(e);});
